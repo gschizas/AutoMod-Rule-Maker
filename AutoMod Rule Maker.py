@@ -4,21 +4,14 @@ import random
 import functools
 import re
 
-#if praw not installed, install it
-try:
-    import praw
-except:
-    import pip
-    pip.main(['install','praw'])
-    import praw
-
+import praw
 
 #create reddit object global
-r=praw.Reddit("AutoModerator Rule Creator by /u/captainmeta4")
+r = praw.Reddit("AutoModerator Rule Creator by /u/captainmeta4")
 
 #other globals
 #there should probably be more of these
-VERSION="1.0"
+VERSION = "1.0"
 
 class Application():
 
